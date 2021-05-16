@@ -23,7 +23,7 @@ class _BmiCalculatorState extends State<BmiCalculator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFC2185B),
+      backgroundColor: Color(0xFFffcdd2),
       body:ListView(
         children: <Widget>[
           Padding(
@@ -33,7 +33,7 @@ class _BmiCalculatorState extends State<BmiCalculator> {
               children: [
                 IconButton(
                   icon: Icon(Icons.menu),
-                  color: Colors.white,
+                  color: Colors.black,
                   onPressed: (){
                     print("Icon pressed");
                     //Navigator.pop(context);
@@ -44,16 +44,8 @@ class _BmiCalculatorState extends State<BmiCalculator> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        IconButton(
-                          icon:Icon(Icons.filter_list_rounded),
-                          color:Colors.white,
-                          onPressed: (){print("Icon filter Pressed");},
-                        ),
-                        IconButton(
-                            icon:Icon(Icons.translate),
-                            color:Colors.white,
-                            onPressed: (){print("Icon Menu Pressed");}
-                        )
+                        
+                        
                       ],
                     )
                 )
@@ -65,9 +57,9 @@ class _BmiCalculatorState extends State<BmiCalculator> {
               padding: EdgeInsets.only(left:40.0),
               child: Row(
                 children: [
-                  Text("feedback...",
+                  Text("Check BMI",
                       style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontFamily: 'Cursive',
                           fontWeight: FontWeight.bold,
                           fontSize: 45.0

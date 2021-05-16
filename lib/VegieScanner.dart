@@ -62,7 +62,7 @@ class _VegieScannerState extends State<VegieScanner> {
                 padding: EdgeInsets.only(left:40.0),
                 child: Row(
                   children: [
-                    Text("& your fruit has...",
+                    Text("& your Vegie has...",
                         style: TextStyle(
                             color: Colors.black,
                             fontFamily: 'Cursive',
