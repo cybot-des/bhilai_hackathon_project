@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:bhilai_hackathon_project/ScannerMenu.dart';
 
 class MenuPage extends StatefulWidget {
   @override
@@ -22,7 +23,7 @@ class _MenuPageState extends State<MenuPage> {
           ),
         ),
       ])),
-      backgroundColor: Color(0xFFef9a9a),
+      backgroundColor: Color(0xFFffcdd2),
       body: ListView(
         children: <Widget>[
           Padding(
@@ -130,7 +131,7 @@ class _MenuPageState extends State<MenuPage> {
                                     ),
                                     onTap: () {
                                       print("Tapped row container");
-                                      //Navigator.push(context,MaterialPageRoute(builder: (context) => ScannerPage()));
+                                      Navigator.push(context,MaterialPageRoute(builder: (context) => ScannerMenu()));
                                     },
                                   ))), //*****1st container ends here*******
 
@@ -182,7 +183,7 @@ class _MenuPageState extends State<MenuPage> {
                                     ),
                                     onTap: () {
                                       // Navigator.push(context, MaterialPageRoute(
-                                      //     builder: (context) => ClassifySoilType()));
+                                      //     builder: (context) => ));
                                     },
                                   ))),
                           //*********************2nd container ends here**************************
@@ -236,7 +237,7 @@ class _MenuPageState extends State<MenuPage> {
                                       ),
                                       onTap: () {
                                         // Navigator.push(context, MaterialPageRoute(
-                                        //     builder: (context) => WeatherScreen()));
+                                        //     builder: (context) => ));
                                       }))),
 
                           //****************************** 3rd container ends here***********************************
@@ -338,7 +339,7 @@ class _MenuPageState extends State<MenuPage> {
                                       ],
                                     ),
                                     onTap: () {
-                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => KrushiKendraMap()));
+                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => ));
                                     },
                                   ))),
                           // ****************** 5th container ends here *********************

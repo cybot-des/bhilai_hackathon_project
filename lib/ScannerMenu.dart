@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bhilai_hackathon_project/FruitScanner.dart';
 
 class ScannerMenu extends StatefulWidget {
   @override
@@ -12,7 +13,7 @@ class _ScannerMenuState extends State<ScannerMenu> {
     var screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
-        backgroundColor: Color(0xFF673AB7),
+        backgroundColor: Color(0xFFFffcdd2),
         body:ListView(
           children: <Widget>[
             Padding(
@@ -22,7 +23,7 @@ class _ScannerMenuState extends State<ScannerMenu> {
                 children: [
                   IconButton(
                     icon: Icon(Icons.arrow_back_ios_sharp),
-                    color: Colors.white,
+                    color: Colors.black,
                     onPressed: (){
                       print("Icon pressed");
                       Navigator.pop(context);
@@ -47,10 +48,10 @@ class _ScannerMenuState extends State<ScannerMenu> {
                   children: [
                     Text("Choose scan",
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontFamily: 'Cursive',
                             fontWeight: FontWeight.bold,
-                            fontSize: 45.0
+                            fontSize: 50.0
                         ))
                   ],
                 )
@@ -87,7 +88,7 @@ class _ScannerMenuState extends State<ScannerMenu> {
                                       borderRadius: BorderRadius.only(topLeft: Radius.circular(50)),
                                       color: Colors.white,
                                       boxShadow: [
-                                        BoxShadow(color:Color(0xFF673AB7), spreadRadius: 2),
+                                        BoxShadow(color:Color(0xFFe57373), spreadRadius: 2),
                                       ],
                                     ),
                                     child:GestureDetector(child:Row(
@@ -110,7 +111,7 @@ class _ScannerMenuState extends State<ScannerMenu> {
                                     ),
                                       onTap: (){
                                         print("Tapped row container");
-                                        //Navigator.push(context,MaterialPageRoute(builder:  (context) => FruitScanner()));
+                                        Navigator.push(context,MaterialPageRoute(builder:  (context) => FruitScanner()));
                                       },)
                                 )
                             ), //**********1st container ends here**********
@@ -131,7 +132,7 @@ class _ScannerMenuState extends State<ScannerMenu> {
                                 borderRadius: BorderRadius.only(topLeft: Radius.circular(50)),
                                 color: Colors.white,
                                 boxShadow: [
-                                  BoxShadow(color:Color(0xFF673AB7), spreadRadius: 2),
+                                  BoxShadow(color:Color(0xFFe57373), spreadRadius: 2),
                                 ],
                               ),
                               child:GestureDetector(child:Row(
