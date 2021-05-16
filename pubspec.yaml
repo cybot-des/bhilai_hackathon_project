@@ -56,6 +56,10 @@ flutter:
      - feedback.png
      - harvest.png
      - vegetable.png
+     - assets/fruits/model_unquant.tflite
+     - assets/fruits/labels.txt
+     
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
