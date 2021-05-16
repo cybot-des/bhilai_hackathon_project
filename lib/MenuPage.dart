@@ -1,6 +1,8 @@
+import 'package:bhilai_hackathon_project/BmiCalculator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:bhilai_hackathon_project/ScannerMenu.dart';
+import 'package:bhilai_hackathon_project/AskDietician.dart';
 
 class MenuPage extends StatefulWidget {
   @override
@@ -288,7 +290,7 @@ class _MenuPageState extends State<MenuPage> {
                                       ],
                                     ),
                                     onTap: () {
-                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => feedbackScreen()));
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => feedbackScreen()));
                                     },
                                   ))),
                           // ********** 4th container ends here *******************
@@ -327,11 +329,10 @@ class _MenuPageState extends State<MenuPage> {
                                                   BorderRadius.circular(180.0),
                                             ),
                                             child: ImageIcon(
-                                                AssetImage(
-                                                    'assets/location.png'),
+                                                AssetImage('assets/body-mass.png'),
                                                 size: 120.0,
-                                                color: Colors.black)),
-                                        Text("",
+                                                color: Colors.black) ),
+                                        Text("Check BMI",
                                             style: TextStyle(
                                                 fontFamily: 'Calibri',
                                                 fontSize: 30,
@@ -339,7 +340,7 @@ class _MenuPageState extends State<MenuPage> {
                                       ],
                                     ),
                                     onTap: () {
-                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => ));
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => BmiCalculator()));
                                     },
                                   ))),
                           // ****************** 5th container ends here *********************
@@ -362,9 +363,7 @@ Widget _buildPopupDialog(BuildContext context) {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text("Agro Culture is a smart app equipped "
-            "to provide all knowledge based information"
-            " for farming"),
+        Text("NutriFoodz is nutrition based health assist app"),
       ],
     ),
     actions: <Widget>[

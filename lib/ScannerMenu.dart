@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bhilai_hackathon_project/FruitScanner.dart';
+import 'package:bhilai_hackathon_project/VegieScanner.dart';
+
 
 class ScannerMenu extends StatefulWidget {
   @override
@@ -155,7 +157,7 @@ class _ScannerMenuState extends State<ScannerMenu> {
                               ),
                               onTap: (){
                                 print("Tapped Maize container");
-                                //Navigator.push(context,MaterialPageRoute(builder:  (context) => VegieScanner()));
+                                Navigator.push(context,MaterialPageRoute(builder:  (context) => VegieScanner()));
                               },
                               )
                             )
