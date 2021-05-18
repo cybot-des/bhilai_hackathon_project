@@ -1,16 +1,21 @@
-# bhilai_hackathon_project
+# Nutri Foodz: Your Nutition Guide 
 
-A new Flutter project.
+## Made at Bhilai Hackathon & still under development
 
-## Getting Started
+A new Flutter App thts helps you to:
+<ul>
+  <li>Scan natural objects and gets its nutitional value and tips recipes</li>
+  <li>Check your BMI</li>
+  <li>Make a Diet Schedule/Plan</li>
+  <li>Ask your queries to an expert dietician</li>
+</ui>
+  <br/>
+  
+  
+## Some snips of app:
+  
+  <img src="">
+  
+  
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Made with ❤ By Pooja Deshpande
